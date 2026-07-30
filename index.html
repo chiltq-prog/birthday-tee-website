@@ -106,11 +106,20 @@
       <p class="preview-label">Preview</p>
       <div class="tee-stage">
         <svg id="teeSvg" width="180" height="180" viewBox="0 0 200 200">
-          <g id="teeGroup" transform="translate(100,100) scale(1)">
-            <path d="M -60 -70 L -30 -85 C -20 -70 20 -70 30 -85 L 60 -70 L 78 -40 L 55 -25 L 55 70 C 55 78 48 84 40 84 L -40 84 C -48 84 -55 78 -55 70 L -55 -25 L -78 -40 Z"
-                  id="teeBody" fill="#2F6FED" stroke="#0B1D3A" stroke-width="4" stroke-linejoin="round"/>
-          </g>
-        </svg>
+            <defs>
+              <linearGradient id="teeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FF477E"/>
+                <stop offset="100%" stop-color="#00B4D8"/>
+              </linearGradient>
+            </defs>
+            <g id="teeGroup" transform="translate(100,100) scale(1)">
+              <!-- Adding a dynamic hover animation in CSS later, but the SVG gets a cool gradient -->
+              <path d="M -60 -70 L -30 -85 C -20 -70 20 -70 30 -85 L 60 -70 L 78 -40 L 55 -25 L 55 70 C 55 78 48 84 40 84 L -40 84 C -48 84 -55 78 -55 70 L -55 -25 L -78 -40 Z"
+                    id="teeBody" fill="url(#teeGrad)" stroke="#0B1D3A" stroke-width="4" stroke-linejoin="round"/>
+              <text x="0" y="-15" text-anchor="middle" font-size="28">??</text>
+              <text id="shirtNameText" x="0" y="25" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="18" fill="#FFF"></text>
+            </g>
+          </svg>
       </div>
       <div class="tee-tag">
         <span>Size</span>
@@ -274,13 +283,13 @@ sizeGroup.addEventListener('click', (e) => {
 
 officeEl.addEventListener('change', () => { clearError('f-office'); updatePreview(); });
 monthEl.addEventListener('change', () => { clearError('f-month'); updatePreview(); });
-nameEl.addEventListener('input', () => clearError('f-name'));
+nameEl.addEventListener('input', () => { clearError('f-name'); updatePreview(); });
 empcodeEl.addEventListener('input', () => clearError('f-empcode'));
 teamEl.addEventListener('input', () => clearError('f-team'));
 
 function updatePreview(){
   const scale = selectedSize ? SCALE_BY_SIZE[selectedSize] : 1;
-  teeGroup.setAttribute('transform', `translate(100,100) scale(${scale})`);
+  document.querySelector('.tee-stage').style.setProperty('--tee-scale', scale);
   tagSize.textContent = selectedSize || '—';
   tagOffice.textContent = officeEl.value || '—';
   tagMonth.textContent = monthEl.value || '—';
