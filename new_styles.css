@@ -832,8 +832,8 @@
   }
   .size-btn:hover{ border-color: var(--secondary); }
   .size-btn.active{
-    background: var(--navy);
-    border-color: var(--navy);
+    background: var(--primary);
+    border-color: var(--primary);
     color: var(--white);
   }
 
