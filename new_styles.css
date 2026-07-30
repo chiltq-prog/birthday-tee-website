@@ -1,9 +1,10 @@
   :root{
-    --bg-main: #2F52DA;
-    --bg-dark: #1E3A8A;
-    --primary: #4F7FFF;
-    --primary-hover: #3B6BE6;
-    --secondary: #00B4D8;
+    --bg-main: #2528b9;
+    --bg-dark: #1b1a8d;
+    --primary: #4A67D2;
+    --primary-hover: #3b5bdb;
+    --secondary: #5de6ba;
+    --accent: #55cdfc;
     --white: #FFFFFF;
     --paper: rgba(255, 255, 255, 0.15);
     --paper-hover: rgba(255, 255, 255, 0.25);
@@ -17,10 +18,7 @@
   html,body{
     font-family:'Inter', sans-serif;
     background: radial-gradient(circle at top left, #3b5bdb 0%, #1c3d99 100%);
-    background-image: 
-      radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.1), transparent 30%),
-      radial-gradient(circle at 85% 70%, rgba(255, 255, 255, 0.1), transparent 30%),
-      linear-gradient(135deg, #2F52DA 0%, #122B7A 100%);
+    background-image: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-main) 100%);
     color: var(--ink);
     min-height:100vh;
     padding: 48px 20px 80px;
@@ -893,8 +891,9 @@
     padding: 10px 0 22px;
   }
   .tee-tag{
-    display:flex;
-    justify-content:space-between;
+      width: 100%;
+      display:flex;
+      justify-content:space-between;
     padding:14px 0;
     border-top:1px solid var(--line);
     font-family:'JetBrains Mono', monospace;
