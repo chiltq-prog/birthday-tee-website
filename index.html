@@ -105,7 +105,7 @@
     <div class="preview">
       <p class="preview-label">Preview</p>
       <div class="tee-stage">
-        <svg id="teeSvg" width="180" height="180" viewBox="0 0 200 200">
+<svg id="teeSvg" width="180" height="180" viewBox="0 0 200 200">
       <g id="teeGroup" transform="translate(100, 90) scale(1)" style="transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);">
         <!-- Oversized Black Tee -->
         <path d="M -28 -75 C -15 -62 15 -62 28 -75 L 75 -55 L 85 -20 L 55 -5 L 50 95 L -50 95 L -55 -5 L -85 -20 L -75 -55 Z" fill="#0f0f0f" stroke="#222" stroke-width="1.5" stroke-linejoin="round"/>
@@ -291,9 +291,13 @@ teamEl.addEventListener('input', () => clearError('f-team'));
 function updatePreview(){
   const scale = selectedSize ? SCALE_BY_SIZE[selectedSize] : 1;
   document.querySelector('.tee-stage').style.setProperty('--tee-scale', scale);
-  tagSize.textContent = selectedSize || '—';
-  tagOffice.textContent = officeEl.value || '—';
-  tagMonth.textContent = monthEl.value || '—';
+  const tagNamePreview = document.getElementById('tagNamePreview');
+  if(tagNamePreview) tagNamePreview.textContent = nameEl.value.trim() || '�';
+  const shirtNameEl = document.getElementById('shirtNameText');
+  if(shirtNameEl) shirtNameEl.textContent = nameEl.value.trim() || '';
+  tagSize.textContent = selectedSize || '�';
+  tagOffice.textContent = officeEl.value || '�';
+  tagMonth.textContent = monthEl.value || '�';
 }
 
 function clearError(fieldId){
