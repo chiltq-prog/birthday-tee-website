@@ -605,7 +605,7 @@
 
   /* footer */
   .site-footer{
-    margin-top:64px;
+      margin-top:24px;
     text-align:center;
     font-size:14px;
     color: rgba(255, 255, 255, 0.6);
