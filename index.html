@@ -105,22 +105,27 @@
     <div class="preview">
       <p class="preview-label">Preview</p>
       <div class="tee-stage">
-        <svg id="teeSvg" width="180" height="180" viewBox="0 0 200 200">
-  <defs>
-    <linearGradient id="teeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2D3748"/>
-      <stop offset="100%" stop-color="#1A202C"/>
-    </linearGradient>
-  </defs>
-  <g id="teeGroup" transform="translate(100, 100) scale(1)" style="transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);">
-    <path d="M-25,-75 C-15,-65 15,-65 25,-75 C35,-78 45,-75 55,-65 L80,-40 C85,-35 85,-25 75,-15 L60,-5 C55,-10 50,-10 45,0 L45,75 C45,85 35,90 25,90 L-25,90 C-35,90 -45,85 -45,75 L-45,0 C-50,-10 -55,-10 -60,-5 L-75,-15 C-85,-25 -85,-35 -80,-40 L-55,-65 C-45,-75 -35,-78 -25,-75 Z" fill="url(#teeGrad)" stroke="#4A67D2" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="M-25,-75 C-15,-65 15,-65 25,-75 C15,-85 -15,-85 -25,-75 Z" fill="#1A202C" stroke="#4A67D2" stroke-width="1.5" stroke-linejoin="round"/>
-    <text x="0" y="-15" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12" fill="#5de6ba" letter-spacing="3">GEAR GAMES</text>
-    <text id="shirtNameText" x="0" y="25" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" fill="#FFF"></text>
-  </g>
-</svg>
+        <svg id="teeSvg" width="180" height="180" viewBox="-30 -30 260 260">
+    <defs>
+      <linearGradient id="teeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2D3748"/>
+        <stop offset="100%" stop-color="#1A202C"/>
+      </linearGradient>
+    </defs>
+    <g id="teeGroup" transform="translate(100, 100) scale(1)" style="transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);">
+      <path d="M -60 -70 L -30 -85 C -20 -70 20 -70 30 -85 L 60 -70 L 80 -40 L 55 -20 L 55 70 C 55 80 45 85 35 85 L -35 85 C -45 85 -55 80 -55 70 L -55 -20 L -80 -40 Z" fill="url(#teeGrad)" stroke="#4A67D2" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M -30 -85 C -20 -70 20 -70 30 -85 C 20 -95 -20 -95 -30 -85 Z" fill="#0B1D3A" stroke="#4A67D2" stroke-width="1.5" />
+      <path d="M -55 -20 L -35 -40 M 55 -20 L 35 -40 M -45 75 L 45 75" stroke="#4A67D2" stroke-width="1.5" stroke-linecap="round" />
+      <text x="0" y="-15" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12" fill="#5de6ba" letter-spacing="3">GEAR GAMES</text>
+      <text id="shirtNameText" x="0" y="25" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" fill="#FFF"></text>
+    </g>
+  </svg>
       </div>
       <div class="tee-tag">
+          <span>Name</span>
+          <span id="tagNamePreview">-</span>
+        </div>
+        <div class="tee-tag">
         <span>Size</span>
         <span id="tagSize">—</span>
       </div>

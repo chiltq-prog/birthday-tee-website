@@ -51,11 +51,11 @@
     color: var(--white);
   }
   .sub{
-    color: rgba(255, 255, 255, 0.8);
-    font-size:18px;
-    max-width:500px;
-    line-height:1.6;
-    margin:0 auto;
+      color: rgba(255, 255, 255, 0.8);
+      font-size:18px;
+      max-width:500px;
+      line-height:1.6;
+      margin: 24px auto 0 auto;
   }
   .stamp{
     font-family:'JetBrains Mono', monospace;
@@ -556,13 +556,13 @@
 
   /* party icons scattered near hero */
   .party-icons{
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin-top: 16px;
-    margin-bottom: 24px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin-top: 4px;
+      margin-bottom: 24px;
   }
   .floating-emoji {
     
