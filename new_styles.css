@@ -611,15 +611,17 @@
     color: rgba(255, 255, 255, 0.6);
   }
   .site-footer .tag{
-    display:inline-block;
-    background: rgba(255,255,255,0.6);
-    border: 1px solid var(--line);
-    padding:8px 16px;
-    border-radius:100px;
-    margin-bottom:12px;
-    font-weight: 500;
-    backdrop-filter: blur(8px);
-  }
+      display:inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFF;
+      padding:10px 20px;
+      border-radius:100px;
+      margin-bottom:12px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
   .site-footer .tag span{ color: var(--secondary); font-weight: 600; }
   .site-footer .fine{
     margin-top:8px;
