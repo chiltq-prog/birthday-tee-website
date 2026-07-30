@@ -562,7 +562,7 @@
     justify-content: center;
     font-size: 32px;
     margin-top: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 
@@ -592,7 +592,7 @@
 
   /* footer */
   .site-footer{
-      margin-top:32px;
+      margin-top: 20px;
     text-align:center;
     font-size:14px;
     color: rgba(255, 255, 255, 0.6);
