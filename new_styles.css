@@ -883,6 +883,7 @@
     margin-bottom:18px;
   }
   .tee-stage{
+      filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
     display:flex;
     align-items:center;
     justify-content:center;
@@ -975,6 +976,6 @@
   }
   #teeGroup {
     animation: teeFloat 4s ease-in-out infinite;
-    transform-origin: center;
+    
     transition: all 0.3s ease;
   }
