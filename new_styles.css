@@ -55,7 +55,7 @@
       font-size:18px;
       max-width:500px;
       line-height:1.6;
-      margin: 24px auto 0 auto;
+      margin: 40px auto 0 auto;
   }
   .stamp{
     font-family:'JetBrains Mono', monospace;
@@ -561,7 +561,7 @@
       align-items: center;
       justify-content: center;
       font-size: 32px;
-      margin-top: 4px;
+      margin-top: 8px;
       margin-bottom: 24px;
   }
   .floating-emoji {
