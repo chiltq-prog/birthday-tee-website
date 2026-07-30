@@ -8,7 +8,7 @@
     --white: #FFFFFF;
     --paper: rgba(255, 255, 255, 0.15);
     --paper-hover: rgba(255, 255, 255, 0.25);
-    --ink: #FFFFFF;
+    --ink: #0B1D3A;
     --ink-light: rgba(255, 255, 255, 0.8);
     --line: rgba(255, 255, 255, 0.2);
     --line-soft: rgba(255, 255, 255, 0.1);
@@ -19,7 +19,7 @@
     font-family:'Inter', sans-serif;
     background: radial-gradient(circle at top left, #3b5bdb 0%, #1c3d99 100%);
     background-image: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-main) 100%);
-    color: var(--ink);
+    color: #FFFFFF;
     min-height:100vh;
     padding: 48px 20px 80px;
     display:flex;
@@ -48,9 +48,7 @@
     line-height:1.05;
     margin:0;
     letter-spacing:-0.02em;
-    background: linear-gradient(135deg, #FF477E, #00B4D8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--white);
   }
   .sub{
     color: var(--ink-light);
@@ -167,8 +165,8 @@
     border-radius:12px;
     font-family:'Inter', sans-serif;
     font-size:15px;
-    color: var(--ink);
-    background: rgba(255,255,255,0.6);
+    color: #111827;
+    background: #ffffff;
     appearance:none;
     -webkit-appearance:none;
     transition: all .2s ease;
@@ -563,11 +561,11 @@
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    margin-top: -10px;
+    margin-top: 16px;
     margin-bottom: 24px;
   }
   .floating-emoji {
-    animation: float 4s ease-in-out infinite;
+    
     filter: drop-shadow(0 8px 12px rgba(255, 71, 126, 0.2));
   }
   .e1 { animation-delay: 0s; font-size: 40px; }
@@ -966,3 +964,5 @@
 }
 .success-close-btn:hover{ background: #3B82F6; }
 
+
+  select option { color: #111827; background: #ffffff; }
