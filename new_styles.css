@@ -984,3 +984,18 @@
     
     transition: all 0.3s ease;
   }
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-8px) rotate(-3deg); }
+    75% { transform: translateY(5px) rotate(3deg); }
+}
+.floating-emoji {
+    display: inline-block;
+    animation: iconFloat 3.5s ease-in-out infinite;
+    transform-origin: center center;
+}
+.floating-emoji.e1 { animation-delay: 0s; }
+.floating-emoji.e2 { animation-delay: 0.7s; }
+.floating-emoji.e3 { animation-delay: 1.4s; }
+.floating-emoji.e4 { animation-delay: 2.1s; }
